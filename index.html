@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close menu" role="button">
+    <label class="close-menu-label" for="close-menu" title="close menu"></label>
+
+    <aside class="menu white-bg">
+        <div class="main-content menu-content">
+
+            <!-- <h1><a href="#">LOGO</a></h1> -->
+
+            <h1 onclick="getElementById('close-menu').checked = false;">
+                <img src="assets/img/profile.png" alt="Profile picture" class="profile-picture">
+            </h1>
+            
+
+            <nav>
+                <ul onclick="getElementById('close-menu').checked = false;">
+                    <li><a href="#intro">intro</a></li>
+                    <li><a href="#top3">top 3</a></li>
+                    <li><a href="#grid-one">grid one</a></li>
+                    <li><a href="#gallery">gallery</a></li>
+                    <li><a href="#contact">reach me</a></li>
+                </ul>
+            </nav>
+        </div>
+    </aside>
+
+    <br>
+    <div class="menu-spacing"></div>
+
+    <section class="intro main-bg section">
+
+        <div id="intro" class="main-content intro-content">
+            <div class="intro-text-content">
+
+                <h2>Adrián Gastón Lumbía Herrmann</h2>
+                <p> Profissional em transição de carreira para a área de Desenvolvimento de Software. Conhecimentos em
+                    VBA, Java, MySQL, HTML, CSS e JavaScript, adquiridos com projetos práticos e estudos. Busco
+                    oportunidades para aplicar esses conhecimentos em diferentes áreas do desenvolvimento, contribuindo
+                    com soluções eficientes e ampliando minha experiência.</p>
+            </div>
+
+            <div class="intro-img">
+                <img src="assets/img/javascript.svg"
+                    alt="Imagem com três pessoas segurando os Ícones de HTML5, CSS e JavaScript">
+            </div>
+        </div>
+
+    </section>
+
+    <section id="top3" class="white-bg section">
+
+        <div class="main-content top3-content">
+            <h2>Top 3 jobs</h2>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi et voluptatum dicta distinctio ipsum?
+                Voluptate autem quae magni minima ducimus corrupti, sint iure? Doloribus placeat unde sint voluptates
+                quidem ex?</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel expedita voluptate repudiandae blanditiis
+                cum ad ut, ducimus dicta officia aliquam laborum beatae molestias ipsam tempore modi ab incidunt
+                similique. Doloremque!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, distinctio itaque repellendus,
+                repudiandae explicabo doloribus error quibusdam tempora deserunt non eos, dolore minus. Libero
+                reiciendis, unde totam sit perferendis nam.</p>
+        </div>
+    </section>
+
+    <section id="grid-one" class="grid-one main-bg section">
+
+        <div class="main-content grid-one-content">
+            <h2 class="grid-main-heading">Top 3</h2>
+
+            <p class="grid-desciption">Breve descrição aqui!</p>
+
+            <div class="grid">
+
+                <article>
+                    <h3>Teste</h3>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea ipsa sed earum dolores? Asperiores
+                        itaque error culpa, omnis molestias pariatur eius doloremque porro ratione eligendi debitis
+                        accusamus tempore. Inventore, laborum.</p>
+                </article>
+
+                <article>
+                    <h3>Teste</h3>
+
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus fugit maxime inventore
+                        consequatur adipisci laudantium sit modi quae officia dicta, vel accusamus. Repellat nobis
+                        quaerat
+                        tempore sequi minima? Temporibus, accusamus!</p>
+                </article>
+
+                <article>
+                    <h3>Teste</h3>
+
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus fugit maxime inventore
+                        consequatur adipisci laudantium sit modi quae officia dicta, vel accusamus. Repellat nobis
+                        quaerat
+                        tempore sequi minima? Temporibus, accusamus!</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="gallery" class="grid-one white-bg section">
+
+        <div class="main-content grid-one-content">
+            <h2 class="grid-main-heading">Gallery</h2>
+
+            <p class="grid-description">Uma breve descrição</p>
+
+            <div class="grid">
+
+                <div class="gallery-img">
+                    <img src="assets/img/1.jpg" alt="">
+                </div>
+                <div class="gallery-img">
+                    <img src="assets/img/2.jpg" alt="">
+                </div>
+                <div class="gallery-img">
+                    <img src="assets/img/3.jpg" alt="">
+                </div>
+                <div class="gallery-img">
+                    <img src="assets/img/4.jpg" alt="">
+                </div>
+                <div class="gallery-img">
+                    <img src="assets/img/5.jpg" alt="">
+                </div>
+                <div class="gallery-img">
+                    <img src="assets/img/6.jpg" alt="">
+                </div>
+
+            </div>
+
+
+        </div>
+    </section>
+
+    <section id="contact" class="intro main-bg section">
+
+        <div class="main-content intro-content">
+            <div class="intro-text-content">
+
+                <h2>Titulo do formulário aqui</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea delectus sunt dolore vel, exercitationem
+                    itaque dolorum magnam magni, mollitia iure laborum ducimus quo praesentium soluta dolores quos est
+                    suscipit labore.</p>
+            </div>
+
+            <div class="intro-img">
+                <img src="assets/img/social-media.svg"
+                    alt="Imagem com duas pessoas segurando os Ícones de Meta, Instagram, Linkedin, etc.">
+            </div>
+        </div>
+
+
+        <div class="contact-form">
+            <fieldset class="form-grid">
+                <legend>Reach Me</legend>
+                <div class="form-group">
+                    <label for="first-name">First Name</label>
+                    <input type="text" name="first-name" id="first-name" placeholder="First Name">
+                </div>
+
+                <div class="form-group">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" name="last-name" id="last-name" placeholder="Last Name">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-Mail</label>
+                    <input type="email" name="email" id="email" placeholder="E-mail">
+                </div>
+
+                <div class="form-group full-width">
+                    <label for="message">Message:</label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                </div>
+
+                <div class="form-group full-width">
+                    <button type="submit">Send Message</button>
+                </div>
+            </fieldset>
+        </div>
+
+    </section>
+
+    <br>
+    <footer id="footer" class="footer white-bg">
+        <p>Feito com <span class="heart">❤️</span> por <a rel="nofollow" target="_blank"
+                href="https://github.com/AdrianGaston">Adrián Gastón Lumbía Herrmann</a></p>
+    </footer>
+
+    <a class="back-to-top" href="#">➤</a>
+</body>
+
+</html>
