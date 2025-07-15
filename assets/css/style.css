@@ -62,13 +62,35 @@ a {
 
 p {
     margin-bottom: 3rem;
+    line-height: 4rem; 
 }
 
-.main-bg {
+/*.main-bg {
     background-image: url('../img/main-bg.svg');
     background-size: cover;
     background-position: center center;
     color: var(--white-color);
+    transform: scaleX(-1);
+}*/
+
+.main-bg {
+    position: relative;
+    color: var(--white-color);
+    overflow: hidden; /* Importante para conter o pseudo-elemento */
+}
+
+.main-bg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../img/main-bg.svg');
+    background-size: cover;
+    background-position: center center;
+    transform: scaleX(-1);
+    z-index: -1; /* Para ficar atrás do conteúdo */
 }
 
 .white-bg {
@@ -80,10 +102,12 @@ p {
     max-width: 120rem;
     margin: 0 auto;
     padding: 10rem var(--gap);
+   
 }
 
 .section {
     min-height: 100vh;
+    
 }
 
 .menu {
@@ -94,6 +118,7 @@ p {
     width: 100%;
     z-index: 1;
     border-bottom: 0.01rem solid var(--light-gray-color);
+    
 }
 
 .menu h1 {
@@ -107,7 +132,8 @@ p {
 /*PICTURE PROFILE AQUI*/
 .profile-picture {
     max-width: 10rem;
-    border: solid var(--primary-color);
+    margin-top: 1rem;
+    /*border: solid var(--primary-color);*/
     border-radius: 0.4rem;
 }
 
@@ -242,8 +268,14 @@ p {
     transform: translate(-3%, 3%) scale(1.2) rotate(5deg);
 }
 
-.contact-form {
+/*.contact-form {
     grid-column: span 2;
+}*/
+
+
+.contact-form {
+    width: 100%;
+    margin-top: 5rem;
 }
 
 .contact-form .form-grid {
@@ -252,6 +284,7 @@ p {
     flex-direction: row;
     flex-wrap: wrap;
     gap: var(--gap);
+    padding: 2rem;
 }
 
 .form-grid legend {
@@ -300,6 +333,7 @@ body.full-width {
     transition: all 300ms ease-in-out;
     border-radius: 5px;
     margin-bottom: 2.5rem;
+    display: block;
 }
 
 .form-group button:hover {
@@ -326,7 +360,7 @@ body.full-width {
 
 .footer p {
     margin: 0;
-    padding: 3rem;
+    padding: 2rem;
 }
 
 .close-menu {
@@ -348,6 +382,20 @@ body.full-width {
     transform: rotate(-90deg);
     border: 0.1rem solid var(--primary-color);
 }
+
+
+.contact-icons {
+    display:flex;
+    align-items: center;
+}
+
+.icons {
+    height: 2.5rem;
+    width: auto;
+   margin: 1.5rem;
+}
+
+
 
 @media (max-width: 800px) {
     .intro-content, .grid {
@@ -381,6 +429,10 @@ body.full-width {
     /*.menu {
         display: none;
     }*/
+
+   h2 {
+    font-size: xx-large;
+   }
 
     .close-menu-label::after {
         content: '☰';

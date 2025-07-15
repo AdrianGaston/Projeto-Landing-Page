@@ -14,24 +14,21 @@
 
 <body>
 
-    <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close menu" role="button">
+    <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close menu">
     <label class="close-menu-label" for="close-menu" title="close menu"></label>
 
     <aside class="menu white-bg">
         <div class="main-content menu-content">
 
-            <!-- <h1><a href="#">LOGO</a></h1> -->
-
             <h1 onclick="getElementById('close-menu').checked = false;">
                 <img src="assets/img/profile.png" alt="Profile picture" class="profile-picture">
             </h1>
-            
 
             <nav>
                 <ul onclick="getElementById('close-menu').checked = false;">
-                    <li><a href="#intro">intro</a></li>
-                    <li><a href="#top3">top 3</a></li>
-                    <li><a href="#grid-one">grid one</a></li>
+                    <li><a href="#intro">about me</a></li>
+                    <li><a href="#experience">professional experience</a></li>
+                    <li><a href="#projects">projects</a></li>
                     <li><a href="#gallery">gallery</a></li>
                     <li><a href="#contact">reach me</a></li>
                 </ul>
@@ -46,12 +43,12 @@
 
         <div id="intro" class="main-content intro-content">
             <div class="intro-text-content">
-
+            
                 <h2>Adrián Gastón Lumbía Herrmann</h2>
-                <p> Profissional em transição de carreira para a área de Desenvolvimento de Software. Conhecimentos em
-                    VBA, Java, MySQL, HTML, CSS e JavaScript, adquiridos com projetos práticos e estudos. Busco
-                    oportunidades para aplicar esses conhecimentos em diferentes áreas do desenvolvimento, contribuindo
-                    com soluções eficientes e ampliando minha experiência.</p>
+                <p>Hi, I'm a professional transitioning into the Software Development field.
+                    I have knowledge in VBA, Java, MySQL, HTML, CSS, and JavaScript, acquired through practical projects and self-directed study.
+                    I'm seeking opportunities to apply these skills across different areas of development, contributing with efficient solutions while expanding my experience.
+                </p>
             </div>
 
             <div class="intro-img">
@@ -62,93 +59,111 @@
 
     </section>
 
-    <section id="top3" class="white-bg section">
+    <section id="experience" class="white-bg section">
 
         <div class="main-content top3-content">
-            <h2>Top 3 jobs</h2>
+            <h2>professional experience</h2>
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi et voluptatum dicta distinctio ipsum?
-                Voluptate autem quae magni minima ducimus corrupti, sint iure? Doloribus placeat unde sint voluptates
-                quidem ex?</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel expedita voluptate repudiandae blanditiis
-                cum ad ut, ducimus dicta officia aliquam laborum beatae molestias ipsam tempore modi ab incidunt
-                similique. Doloremque!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, distinctio itaque repellendus,
-                repudiandae explicabo doloribus error quibusdam tempora deserunt non eos, dolore minus. Libero
-                reiciendis, unde totam sit perferendis nam.</p>
+            <p><b>DIAUDI HOTEL, SÃO JOSÉ – SC</b></p>
+            <p>Customer service, check-in and check-out procedures, management of online reservations via WhatsApp, 
+                email, and phone, guest registration, invoice issuance, among other tasks.
+            </p>
+
+            <hr>
+            <p><b>LA CATRINA FOOD TRUCK, SÃO JOSÉ - SC</b></p>
+            <p>
+                Financial and operational management, with a focus on customer service and administrative support.
+                Assisted in decision-making processes, coordinated day-to-day activities, and ensured smooth business operations.
+            </p>
+
+            <hr>
+            <p><b>ABSOLUTE MARKETING EIRELE, FLORIANÓPOLIS – SC</b></p>
+            <p>
+                Product sales, customer service, and client prospecting in a fast-paced call center.
+                Handled inbound and outbound calls, promoted products, resolved issues, and built strong customer relationships.
+            </p>
         </div>
     </section>
 
-    <section id="grid-one" class="grid-one main-bg section">
+    <section id="projects" class="grid-one main-bg section">
 
         <div class="main-content grid-one-content">
-            <h2 class="grid-main-heading">Top 3</h2>
+            <h2 class="grid-main-heading">Projects</h2>
 
-            <p class="grid-desciption">Breve descrição aqui!</p>
+            <p class="grid-desciption">Some projects that I made for diferent reasons..</p>
 
             <div class="grid">
 
                 <article>
-                    <h3>Teste</h3>
-
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea ipsa sed earum dolores? Asperiores
-                        itaque error culpa, omnis molestias pariatur eius doloremque porro ratione eligendi debitis
-                        accusamus tempore. Inventore, laborum.</p>
+                    <h3>VBA Web Scraping – Currency Quotes</h3>
+                    <p>VBA project automates the extraction of exchange rates for major currencies (Dollar, Euro, Pound, Gold, and Bitcoin) directly from websites.
+                         The retrieved values are displayed in the user interface and can be inserted into an Excel spreadsheet.
+                    </p>
                 </article>
 
                 <article>
-                    <h3>Teste</h3>
-
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus fugit maxime inventore
-                        consequatur adipisci laudantium sit modi quae officia dicta, vel accusamus. Repellat nobis
-                        quaerat
-                        tempore sequi minima? Temporibus, accusamus!</p>
+                    <h3>VBA WhatsApp Automation</h3>
+                    <p>Project uses VBA and Selenium to automate sending messages via WhatsApp Web, 
+                        eliminating the need for repeated logins to the WhatsApp account. Ideal for repetitive tasks or bulk message sending with efficiency.
+                    </p>
                 </article>
 
                 <article>
-                    <h3>Teste</h3>
-
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus fugit maxime inventore
-                        consequatur adipisci laudantium sit modi quae officia dicta, vel accusamus. Repellat nobis
-                        quaerat
-                        tempore sequi minima? Temporibus, accusamus!</p>
+                    <h3>Java Auctions Project</h3>
+                    <p>This project was developed in Java with a MySQL database. It was initially created at Senac for study purposes and later improved by me.
+                        The system includes features such as electronic product registration, product listing, product sales, and a sold products history
+                    </p>
                 </article>
+
             </div>
         </div>
     </section>
-
-
 
     <section id="gallery" class="grid-one white-bg section">
 
         <div class="main-content grid-one-content">
             <h2 class="grid-main-heading">Gallery</h2>
 
-            <p class="grid-description">Uma breve descrição</p>
-
+            <p class="grid-desciption">
+                Here you’ll find a few glimpses of my journey through development and creativity. <br>
+                Take a closer look and get a feel for the kind of work I enjoy doing.
+            </p>
+        
             <div class="grid">
 
                 <div class="gallery-img">
-                    <img src="assets/img/1.jpg" alt="">
+                    <a href="https://media.licdn.com/dms/image/v2/D4D22AQFy9pwog5IWQQ/feedshare-shrink_800/B4DZa3Sc4nG0Ak-/0/1746831792631?e=1755734400&v=beta&t=4fH0YKf6kgrApFKDyjZ6KDJ5QYvOUsEdZSjtJ528qbU" target="_blank" rel="noopener noreferrer" loading="lazy">
+                        <img src="https://media.licdn.com/dms/image/v2/D4D22AQFy9pwog5IWQQ/feedshare-shrink_800/B4DZa3Sc4nG0Ak-/0/1746831792631?e=1755734400&v=beta&t=4fH0YKf6kgrApFKDyjZ6KDJ5QYvOUsEdZSjtJ528qbU" alt="Hotel Continental">
+                    </a>
+                    
                 </div>
                 <div class="gallery-img">
-                    <img src="assets/img/2.jpg" alt="">
+                    <a href="https://media.licdn.com/dms/image/v2/D4D22AQEQfKFnnMXgug/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1709917727069?e=1755734400&v=beta&t=MU7kitV2UM8f01rfOzx5A2-AzFqIyMN_Is9xlw_yU7E" target="_blank" rel="noopener noreferrer" loading="lazy">
+                        <img src="https://media.licdn.com/dms/image/v2/D4D22AQEQfKFnnMXgug/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1709917727069?e=1755734400&v=beta&t=MU7kitV2UM8f01rfOzx5A2-AzFqIyMN_Is9xlw_yU7E" alt="Web-Scraping">
+                    </a>
+                    
                 </div>
                 <div class="gallery-img">
                     <img src="assets/img/3.jpg" alt="">
                 </div>
+
                 <div class="gallery-img">
-                    <img src="assets/img/4.jpg" alt="">
+                    <a href="https://media.licdn.com/dms/image/v2/D4D22AQFC7nxdnUZVdg/feedshare-shrink_2048_1536/B4DZa3Sc3pGwAs-/0/1746831790167?e=1755734400&v=beta&t=AQQBdVtVBm1NwWs_i08gnv_PO24LeDMqFC7k_1T5wO8" target="_blank" rel="noopener noreferrer" loading="lazy">
+                        <img src="https://media.licdn.com/dms/image/v2/D4D22AQFC7nxdnUZVdg/feedshare-shrink_2048_1536/B4DZa3Sc3pGwAs-/0/1746831790167?e=1755734400&v=beta&t=AQQBdVtVBm1NwWs_i08gnv_PO24LeDMqFC7k_1T5wO8" alt="Reservation">
+                    </a>
+                    
                 </div>
                 <div class="gallery-img">
                     <img src="assets/img/5.jpg" alt="">
                 </div>
+
                 <div class="gallery-img">
-                    <img src="assets/img/6.jpg" alt="">
+                    <a href="https://media.licdn.com/dms/image/v2/D4D22AQF-WC1LX8kGaw/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1709917727313?e=1755734400&v=beta&t=Z3w0Yyso38D7fj6l5VSVly0ChECg6B3zgpir2uC0ttw" target="_blank" rel="noopener noreferrer" loading="lazy">
+                        <img src="https://media.licdn.com/dms/image/v2/D4D22AQF-WC1LX8kGaw/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1709917727313?e=1755734400&v=beta&t=Z3w0Yyso38D7fj6l5VSVly0ChECg6B3zgpir2uC0ttw" alt="Codigo fonte Web-Scraping">
+                    </a>
                 </div>
-
+                
             </div>
-
 
         </div>
     </section>
@@ -158,10 +173,12 @@
         <div class="main-content intro-content">
             <div class="intro-text-content">
 
-                <h2>Titulo do formulário aqui</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea delectus sunt dolore vel, exercitationem
-                    itaque dolorum magnam magni, mollitia iure laborum ducimus quo praesentium soluta dolores quos est
-                    suscipit labore.</p>
+                <h2>How to reach me</h2>
+                <p>
+                    Curious to know more about me and my work?
+                    Take a look at my projects, and if something catches your eye, reach out on LinkedIn, GitHub, or email.
+                    I’d love to hear from you!
+                </p>
             </div>
 
             <div class="intro-img">
@@ -170,42 +187,59 @@
             </div>
         </div>
 
-
         <div class="contact-form">
             <fieldset class="form-grid">
                 <legend>Reach Me</legend>
+                
                 <div class="form-group">
-                    <label for="first-name">First Name</label>
-                    <input type="text" name="first-name" id="first-name" placeholder="First Name">
+                    <label for="first-name">First name</label>
+                    <input type="text" name="first-name" id="first-name" placeholder="Your first name">
                 </div>
 
                 <div class="form-group">
-                    <label for="last-name">Last Name</label>
-                    <input type="text" name="last-name" id="last-name" placeholder="Last Name">
+                    <label for="last-name">Last name</label>
+                    <input type="text" name="last-name" id="last-name" placeholder="Your last name">
                 </div>
 
                 <div class="form-group">
-                    <label for="email">E-Mail</label>
-                    <input type="email" name="email" id="email" placeholder="E-mail">
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" id="email" placeholder="Your E-mail">
                 </div>
 
                 <div class="form-group full-width">
                     <label for="message">Message:</label>
-                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Your message"></textarea>
                 </div>
 
                 <div class="form-group full-width">
                     <button type="submit">Send Message</button>
                 </div>
+            
             </fieldset>
+
+            <div class="contact-icons">
+                <!-- E-Mail -->
+                <a href = "mailto:lumbia.85@gmail.com" target="_blank" rel="noopener noreferrer">
+                    <img class="icons" src="assets/img/email-logo.png" alt="Gmail"/>
+                </a>
+                <!-- Linkedin -->
+                <a href="https://www.linkedin.com/in/adriangherrmann/" target="_blank" rel="noopener noreferrer">
+                    <img class="icons" src="assets/img/linkedin-logo.png" alt="Facebook Logo">
+                </a>
+                <!-- GitHub -->
+                <a href="https://github.com/AdrianGaston" target="_blank" rel="noopener noreferrer">
+                    <img class="icons" src="assets/img/github-logo.png" alt="Instagram Logo">
+                </a>
+
+            </div>
+
         </div>
 
     </section>
 
     <br>
     <footer id="footer" class="footer white-bg">
-        <p>Feito com <span class="heart">❤️</span> por <a rel="nofollow" target="_blank"
-                href="https://github.com/AdrianGaston">Adrián Gastón Lumbía Herrmann</a></p>
+        <p>Made with <span class="heart">❤️</span> by <b>Adrián Gastón Lumbía Herrmann</b>.</p>
     </footer>
 
     <a class="back-to-top" href="#">➤</a>
