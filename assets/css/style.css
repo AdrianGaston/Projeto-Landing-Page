@@ -1,9 +1,9 @@
 :root {
     --primary-color: #0A1128;
     --white-color: #FFFFFF;
-    --light-gray-color: #EEEEEE;
+    --light-gray-color: rgb(205, 202, 202);
     --secondary-color: crimson;
-    --gap: 3rem;
+    --gap: 2rem;
 }
 
 * {
@@ -38,6 +38,8 @@ h2 {
     text-transform: uppercase;
     margin-bottom: 5rem;
     line-height: 1.2;
+    border: red;
+    text-shadow: 0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.7);
 }
 
 h3 {
@@ -46,14 +48,6 @@ h3 {
 
 h4 {
     font-size: 4.5rem;
-}
-
-h5 {
-    font-size: 4rem;
-}
-
-h6 {
-    font-size: 3.5rem;
 }
 
 a {
@@ -65,18 +59,10 @@ p {
     line-height: 4rem; 
 }
 
-/*.main-bg {
-    background-image: url('../img/main-bg.svg');
-    background-size: cover;
-    background-position: center center;
-    color: var(--white-color);
-    transform: scaleX(-1);
-}*/
-
 .main-bg {
     position: relative;
     color: var(--white-color);
-    overflow: hidden; /* Importante para conter o pseudo-elemento */
+    overflow: hidden;
 }
 
 .main-bg::before {
@@ -90,7 +76,7 @@ p {
     background-size: cover;
     background-position: center center;
     transform: scaleX(-1);
-    z-index: -1; /* Para ficar atrás do conteúdo */
+    z-index: -1;
 }
 
 .white-bg {
@@ -102,12 +88,10 @@ p {
     max-width: 120rem;
     margin: 0 auto;
     padding: 10rem var(--gap);
-   
 }
 
 .section {
     min-height: 100vh;
-    
 }
 
 .menu {
@@ -115,10 +99,8 @@ p {
     top: 0;
     left: 0;
     right: 0;
-    width: 100%;
     z-index: 1;
     border-bottom: 0.01rem solid var(--light-gray-color);
-    
 }
 
 .menu h1 {
@@ -129,11 +111,10 @@ p {
 .menu h1 a {
     color: inherit;
 }
-/*PICTURE PROFILE AQUI*/
+
 .profile-picture {
     max-width: 10rem;
     margin-top: 1rem;
-    /*border: solid var(--primary-color);*/
     border-radius: 0.4rem;
 }
 
@@ -179,12 +160,11 @@ p {
 }
 
 .menu-spacing {
-    height: 65px; /*VER AQUI!!*/
+    height: 6rem;
 }
 
 .intro-content {
     position: relative;
-    /*top: -8rem;*/
     display: grid;
     grid-template-columns: 1fr 1.5fr;
     gap: var(--gap);
@@ -201,7 +181,7 @@ p {
     max-width: 90%;
     height: auto;
 }
- 
+
 .top3-content {
     max-width: 64rem;
     display: flex;
@@ -224,6 +204,7 @@ p {
     grid-template-columns: repeat(3, 1fr);
     gap: var(--gap);
     counter-reset: grid-counter;
+    margin-top: 4rem;
 }
 
 .grid h3 {
@@ -262,20 +243,21 @@ p {
 
 .gallery-img img {
     transition: all 300ms ease-in-out;
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 .gallery-img img:hover {
     transform: translate(-3%, 3%) scale(1.2) rotate(5deg);
 }
 
-/*.contact-form {
-    grid-column: span 2;
-}*/
-
-
 .contact-form {
+    grid-column: span 2;
     width: 100%;
-    margin-top: 5rem;
+    max-width: 80rem;
+    margin: 1.5rem auto 0 auto;
+    padding: 2rem;
 }
 
 .contact-form .form-grid {
@@ -287,22 +269,22 @@ p {
     padding: 2rem;
 }
 
-.form-grid legend {
-    font-style: italic;
-    font-size: 3rem;
-    margin-bottom: 3rem;
-}
-
 .form-group {
     flex: 1 1 auto;
 }
 
-.form-group label{
+.form-grid legend {
+    font-style: italic;
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
     display: block;
     margin-bottom: 1rem;
 }
 
-.form-group input,
+.form-group input, 
 .form-group textarea {
     border: none;
     background: var(--white-color);
@@ -315,10 +297,11 @@ p {
 
 .form-group input:focus,
 .form-group textarea:focus {
-    box-shadow: 0 0 10px  2px var(--secondary-color);
+    box-shadow: 0 0 10px 2px var(--secondary-color);
+    outline-offset: 2px;
 }
 
-body.full-width {
+body .full-width {
     width: 100%;
     flex: 1 1 100%;
 }
@@ -331,18 +314,20 @@ body.full-width {
     font-size: 2rem;
     cursor: pointer;
     transition: all 300ms ease-in-out;
-    border-radius: 5px;
+    border-radius: 50rem;
     margin-bottom: 2.5rem;
     display: block;
 }
 
-.form-group button:hover {
+.form-group button:hover,
+.form-group button:focus {
     background: var(--white-color);
     color: var(--primary-color);
+    outline: none;
 }
 
 .form-group ::placeholder {
-    color: --var(--light-gray-color);
+    color: var(--light-gray-color);
 }
 
 .footer {
@@ -351,11 +336,7 @@ body.full-width {
 }
 
 .footer a {
-    color:var(--primary-color)
-}
-
-.heart {
-    color: var(--secondary-color);
+    color: var(--primary-color);
 }
 
 .footer p {
@@ -381,8 +362,19 @@ body.full-width {
     color: var(--primary-color);
     transform: rotate(-90deg);
     border: 0.1rem solid var(--primary-color);
+    text-decoration: none;
+    font-size: 2.5rem;
+    line-height: 1;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
+.back-to-top:hover,
+.back-to-top:focus {
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+    outline: none;
+}
 
 .contact-icons {
     display:flex;
@@ -392,10 +384,12 @@ body.full-width {
 .icons {
     height: 2.5rem;
     width: auto;
-   margin: 1.5rem;
+    margin: 1.5rem;
 }
 
-
+#contact .intro-text-content p {
+    margin-bottom: 1.5rem;
+}
 
 @media (max-width: 800px) {
     .intro-content, .grid {
@@ -409,7 +403,7 @@ body.full-width {
     }
 
     .grid-one-content {
-    display: block;
+        display: block;
     }
 
     .menu {
@@ -422,16 +416,16 @@ body.full-width {
         justify-content: center;
     }
 
+    .menu-content ul {
+        display: flex;
+    }
+
     .menu-content {
         height: 100vh;
     }
 
-    /*.menu {
-        display: none;
-    }*/
-
    h2 {
-    font-size: xx-large;
+        font-size: xx-large;
    }
 
     .close-menu-label::after {
