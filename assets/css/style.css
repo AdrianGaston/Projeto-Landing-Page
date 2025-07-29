@@ -38,7 +38,6 @@ h2 {
     text-transform: uppercase;
     margin-bottom: 5rem;
     line-height: 1.2;
-    border: red;
     text-shadow: 0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.7);
 }
 
@@ -246,6 +245,7 @@ p {
     width: 100%;
     height: auto;
     display: block;
+    box-shadow: 0.1rem 0.1rem 0.3rem rgba(0, 0, 0, 0.7);
 }
 
 .gallery-img img:hover {
